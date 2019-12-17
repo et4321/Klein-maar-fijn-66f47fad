@@ -10,7 +10,7 @@ define("GELD" , array(50, 20, 10, 5, 2, 1, 0.50, 0.20, 0.10, 0.05, 0.02, 0.01 ))
     ) {
         $geld = round ($geld, 2);
         $floored = floor ($geld / $bedrag);
-        $geld = $geld - ($floored *  $bedrag);
+        $geld = round ($geld - ($floored *  $bedrag), 2);
     }
 
 
